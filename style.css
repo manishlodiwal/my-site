@@ -1,0 +1,209 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("pexels-felix-mittermeier-956999.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+h1{
+    color:rgb(28, 143, 196);
+}
+
+
+.content {
+    padding: 15px 0 0 30px;
+}
+
+ul {
+   
+    padding: 34px;
+}
+
+nav ul li {
+    display: inline;
+    padding: 0 23px;
+}
+
+@keyframes love {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+
+}
+header{
+height: 70px;
+width: 100vw;
+display: flex;
+justify-content: center;
+align-items: center;
+/* background: #031321; */
+display: flex;
+    justify-content: space-between;
+
+}
+
+header ul li{
+margin: 0;
+padding: 0;
+display: inline;
+height:40px;
+width: auto;
+/* background: #031321; */
+font-family: consolas;
+}
+
+li a {
+position: relative;
+display: inline-block;
+/* padding: 15px 30px; */
+color: #2196f3;
+text-transform: uppercase;
+/* letter-spacing: 4px; */
+text-decoration: none;
+font-size: 1.2rem;
+overflow: hidden;
+transition: 0.2s;
+}
+
+
+
+a:hover {
+color: #255784;
+background: #2196f3;
+box-shadow: 0 0 10px #2196f3, 0 0 40px #2196f3, 0 0 80px #2196f3;
+transition-delay: 1s;
+}
+
+
+a span {
+position: absolute;
+display: block;
+}
+
+
+
+
+a span:nth-child(1) {
+top: 0;
+left: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(90deg, transparent, #2196f3);
+}
+
+
+
+a:hover span:nth-child(1) {
+left: 100%;
+transition: 1s;
+}
+
+
+a span:nth-child(3) {
+bottom: 0;
+right: -100%;
+width: 100%;
+height: 2px;
+background: linear-gradient(270deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(3) {
+right: 100%;
+transition: 1s;
+transition-delay: 0.5s;
+}
+
+
+
+a span:nth-child(2) {
+top: -100%;
+right: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(180deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(2) {
+top: 100%;
+transition: 1s;
+transition-delay: 0.25s;
+}
+
+
+
+a span:nth-child(4) {
+bottom: -100%;
+left: 0;
+width: 2px;
+height: 100%;
+background: linear-gradient(360deg, transparent, #2196f3);
+}
+
+a:hover span:nth-child(4) {
+bottom: 100%;
+transition: 1s;
+transition-delay: 0.75s;
+}
+
+
+#love {
+    animation: love 1s ease-in infinite;
+}
+
+.container {
+    display: flex;
+    height: 30px;
+}
+.container img {
+    border: 2px solid #2196f3;
+    border-radius: 50%;
+    height: 25px;
+}
+
+.box1 {
+    position: fixed;
+    bottom: 0;
+    right: 12px;
+}
+
+.box2 {
+    position: fixed;
+    bottom: 0;
+    right: 70px;
+}
+
+.box3 {
+    position: fixed;
+    bottom: 0;
+    right: 130px;
+   
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    right: 45vw;
+    height: 20px;
+    padding: 20px 0 0 0;
+    font-size: 1rem;
+}
+.lover{
+    display: flex;
+  height: 50vh;
+  width:500px;
+  background-image: url("lover.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  position: relative;
+  bottom: -200px;
+ 
+}
